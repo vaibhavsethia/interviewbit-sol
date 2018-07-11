@@ -18,7 +18,7 @@ bool allocateBoards(vector<int>& boards, int nPainters, int maxBoardLength){
 int Solution::paint(int K, int T, vector<int> &C) {
     int minBoardsToPaint = 0;
     int maxBoardsToPaint = accumulate(C.begin(), C.end(), 0);
-    int bestAns = INT_MAX;
+    long long int bestAns = INT_MAX;
 
     while (minBoardsToPaint <= maxBoardsToPaint) {
         int guess = (minBoardsToPaint + maxBoardsToPaint) / 2;
