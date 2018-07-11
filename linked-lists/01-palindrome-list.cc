@@ -10,7 +10,7 @@
 ListNode* reverseList(ListNode* head){
     ListNode* prev = NULL;
     ListNode* cur = head;
-    while(cur && cur->next){
+    while(cur){
        ListNode* ahead = cur->next;
        cur->next = prev;
        prev = cur;
