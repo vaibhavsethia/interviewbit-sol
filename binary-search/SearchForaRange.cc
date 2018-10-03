@@ -1,3 +1,5 @@
+// https://www.interviewbit.com/problems/search-for-a-range/
+
 int binarySearch(const vector<int>& A, int key, bool searchFirst){
     int start = 0;
     int end = A.size()-1;
